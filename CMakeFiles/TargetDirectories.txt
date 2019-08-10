@@ -1,0 +1,3 @@
+/home/tfc/NetBeansProjects/PCD_Kinect/CMakeFiles/rebuild_cache.dir
+/home/tfc/NetBeansProjects/PCD_Kinect/CMakeFiles/openni_grabber.dir
+/home/tfc/NetBeansProjects/PCD_Kinect/CMakeFiles/edit_cache.dir
