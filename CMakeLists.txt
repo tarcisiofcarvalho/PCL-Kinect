@@ -1,8 +1,10 @@
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+
+set(CMAKE_CXX_STANDARD 11)
 
 project(openni_grabber)
 
-find_package(PCL 1.2 REQUIRED)
+find_package(PCL 1.7 REQUIRED)
 
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})

@@ -1,5 +1,8 @@
  #include <pcl/io/openni_grabber.h>
  #include <pcl/visualization/cloud_viewer.h>
+ #include <pcl/io/pcd_io.h>
+ #include <pcl/point_types.h>
+ #include <iostream>
 
  class SimpleOpenNIViewer
  {
@@ -8,8 +11,11 @@
 
      void cloud_cb_ (const pcl::PointCloud<pcl::PointXYZ>::ConstPtr &cloud)
      {
-       if (!viewer.wasStopped())
+       if (!viewer.wasStopped()){
          viewer.showCloud (cloud);
+       }else{
+         pcl::io::savePCDFile ("test_pcd.pcd", *cloud);
+       }
      }
 
      void run ()
