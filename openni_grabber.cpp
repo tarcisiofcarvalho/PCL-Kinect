@@ -2,6 +2,7 @@
  #include <pcl/visualization/cloud_viewer.h>
  #include <pcl/io/pcd_io.h>
  #include <pcl/point_types.h>
+ #include <pcl/filters/filter.h>
  #include <iostream>
 
  class SimpleOpenNIViewer
@@ -14,7 +15,11 @@
        if (!viewer.wasStopped()){
          viewer.showCloud (cloud);
        }else{
-         pcl::io::savePCDFile ("test_pcd_rgba.pcd", *cloud);
+          typedef pcl::PointCloud<pcl::PointXYZRGBA> CloudType;
+          CloudType::Ptr outputCloud (new CloudType);
+          std::vector<int> indices;
+          pcl::removeNaNFromPointCloud(*cloud,*outputCloud, indices);
+          pcl::io::savePCDFile("test_pcd_rgba.pcd", *outputCloud);
        }
      }
 
