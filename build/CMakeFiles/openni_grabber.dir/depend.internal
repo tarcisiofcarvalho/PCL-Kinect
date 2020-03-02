@@ -40,15 +40,22 @@ CMakeFiles/openni_grabber.dir/openni_grabber.cpp.o
  /usr/include/pcl-1.7/pcl/PolygonMesh.h
  /usr/include/pcl-1.7/pcl/TextureMesh.h
  /usr/include/pcl-1.7/pcl/Vertices.h
+ /usr/include/pcl-1.7/pcl/common/common.h
  /usr/include/pcl-1.7/pcl/common/concatenate.h
  /usr/include/pcl-1.7/pcl/common/copy_point.h
  /usr/include/pcl-1.7/pcl/common/eigen.h
+ /usr/include/pcl-1.7/pcl/common/impl/common.hpp
  /usr/include/pcl-1.7/pcl/common/impl/copy_point.hpp
  /usr/include/pcl-1.7/pcl/common/impl/eigen.hpp
  /usr/include/pcl-1.7/pcl/common/impl/io.hpp
  /usr/include/pcl-1.7/pcl/common/io.h
  /usr/include/pcl-1.7/pcl/common/point_tests.h
  /usr/include/pcl-1.7/pcl/common/synchronizer.h
+ /usr/include/pcl-1.7/pcl/compression/color_coding.h
+ /usr/include/pcl-1.7/pcl/compression/compression_profiles.h
+ /usr/include/pcl-1.7/pcl/compression/entropy_range_coder.h
+ /usr/include/pcl-1.7/pcl/compression/octree_pointcloud_compression.h
+ /usr/include/pcl-1.7/pcl/compression/point_coding.h
  /usr/include/pcl-1.7/pcl/console/print.h
  /usr/include/pcl-1.7/pcl/conversions.h
  /usr/include/pcl-1.7/pcl/correspondence.h
@@ -56,6 +63,8 @@ CMakeFiles/openni_grabber.dir/openni_grabber.cpp.o
  /usr/include/pcl-1.7/pcl/filters/boost.h
  /usr/include/pcl-1.7/pcl/filters/filter.h
  /usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
+ /usr/include/pcl-1.7/pcl/filters/impl/voxel_grid.hpp
+ /usr/include/pcl-1.7/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.7/pcl/for_each_type.h
  /usr/include/pcl-1.7/pcl/geometry/planar_polygon.h
  /usr/include/pcl-1.7/pcl/impl/pcl_base.hpp
@@ -77,6 +86,14 @@ CMakeFiles/openni_grabber.dir/openni_grabber.cpp.o
  /usr/include/pcl-1.7/pcl/io/openni_camera/openni_ir_image.h
  /usr/include/pcl-1.7/pcl/io/openni_grabber.h
  /usr/include/pcl-1.7/pcl/io/pcd_io.h
+ /usr/include/pcl-1.7/pcl/octree/impl/octree_pointcloud.hpp
+ /usr/include/pcl-1.7/pcl/octree/octree2buf_base.h
+ /usr/include/pcl-1.7/pcl/octree/octree_base.h
+ /usr/include/pcl-1.7/pcl/octree/octree_container.h
+ /usr/include/pcl-1.7/pcl/octree/octree_iterator.h
+ /usr/include/pcl-1.7/pcl/octree/octree_key.h
+ /usr/include/pcl-1.7/pcl/octree/octree_nodes.h
+ /usr/include/pcl-1.7/pcl/octree/octree_pointcloud.h
  /usr/include/pcl-1.7/pcl/pcl_base.h
  /usr/include/pcl-1.7/pcl/pcl_config.h
  /usr/include/pcl-1.7/pcl/pcl_exports.h
