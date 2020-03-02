@@ -48,7 +48,7 @@
 
           // Voxel Grid - points reduction
           pcl::VoxelGrid<pcl::PointXYZRGBA> sor;
-          sor.setInputCloud (cloudOut);
+          sor.setInputCloud (outputCloud);
           sor.setLeafSize (0.01f, 0.01f, 0.01f);
           CloudType::Ptr cloud_filtered (new CloudType);
           sor.filter (*cloud_filtered);
