@@ -70,12 +70,10 @@
         PointCloudEncoder = new pcl::io::OctreePointCloudCompression<pcl::PointXYZRGBA> (compressionProfile, showStatistics);
         PointCloudDecoder = new pcl::io::OctreePointCloudCompression<pcl::PointXYZRGBA> ();
 
-       pcl::OpenNIGrabber* interface = new pcl::OpenNIGrabber();
+       pcl::Grabber* interface = new pcl::OpenNIGrabber();
 
        const boost::function<void (const pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr&)> f =
          [this] (const pcl::PointCloud<pcl::PointXYZRGBA>::ConstPtr& cloud) { cloud_cb_ (cloud); };
-
-       interface->getDevice ()->setDepthOutputFormat(openni_wrapper::OpenNIDevice::OpenNI_12_bit_depth);
 
        interface->registerCallback (f);
 
